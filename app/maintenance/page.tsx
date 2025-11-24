@@ -63,7 +63,7 @@ export default function RegistrosPorUsuario() {
 
     try {
       const response = await fetch(
-        `https://upoint-deploy-jpa-production.up.railway.app/editar-registros/usuario/edit?nome=${encodeURIComponent(nome)}`,
+        `http://localhost:8071/editar-registros/usuario/edit?nome=${encodeURIComponent(nome)}`,
       )
       if (!response.ok) throw new Error("Erro ao buscar registros")
       const data = await response.json()

@@ -3,7 +3,7 @@
 import axios from 'axios'
 import { ReactNode } from 'react'
 
-const API_URL = 'https://upoint-deploy-jpa-production.up.railway.app' // ajuste se necessário
+const API_URL = 'http://upoint-deploy-jpa-production.up.railway.app' // ajuste se necessário
 
 export interface FuncionarioRequestDTO {
   login: string

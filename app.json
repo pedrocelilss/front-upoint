@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "fbe1ebbc-52a2-43c0-ac93-b77311b35e49"
+      }
+    },
+    "android": {
+      "package": "com.pedrocelio.frontupoint"
+    }
+  }
+}

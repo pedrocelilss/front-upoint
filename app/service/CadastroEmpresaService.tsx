@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Configurando a instância do Axios
 export const axiosInstance = axios.create({
-  baseURL: "https://upoint-deploy-jpa-production.up.railway.app/", // URL base do backend
+  baseURL: "http://upoint-deploy-jpa-production.up.railway.app/", // URL base do backend
   withCredentials: true, // Inclui cookies e credenciais automaticamente
 });
 

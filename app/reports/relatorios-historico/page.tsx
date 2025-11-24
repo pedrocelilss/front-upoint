@@ -72,7 +72,7 @@ export default function GerarRelatorio() {
         dataFinal,
       })
 
-      const response = await fetch(`https://upoint-deploy-jpa-production.up.railway.app/relatorios/registros?${params.toString()}`, {
+      const response = await fetch(`http://localhost:8071/relatorios/registros?${params.toString()}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
