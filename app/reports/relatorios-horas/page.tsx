@@ -29,7 +29,7 @@ export default function GerarRelatorio() {
     try {
       const token = localStorage.getItem("token")
 
-      const response = await fetch(`http://localhost:8071/auth/busca?search=${encodeURIComponent(termo)}`, {
+      const response = await fetch(`https://upoint-deploy-jpa-production.up.railway.app/auth/busca?search=${encodeURIComponent(termo)}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -71,7 +71,7 @@ export default function GerarRelatorio() {
         dataFinal,
       })
 
-      const response = await fetch(`http://localhost:8071/relatorios/registroPorUsuario?${params.toString()}`, {
+      const response = await fetch(`https://upoint-deploy-jpa-production.up.railway.app/relatorios/registroPorUsuario?${params.toString()}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
