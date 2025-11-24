@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstace = axios.create({
-  baseURL: "http://upoint-deploy-jpa-production.up.railway.app/",
+  baseURL: "https://upoint-deploy-jpa-production.up.railway.app/",
   withCredentials: true
 });
 
