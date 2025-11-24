@@ -13,12 +13,12 @@ export function useDashboardData() {
         setLoading(true)
 
         // Buscar total de funcionários
-        const funcionariosResponse = await fetch("http://upoint-deploy-jpa-production.up.railway.app/auth/funcionarios/count")
+        const funcionariosResponse = await fetch("https://upoint-deploy-jpa-production.up.railway.app/auth/funcionarios/count")
         const funcionariosData = await funcionariosResponse.json()
         setTotalFuncionarios(funcionariosData.total)
 
         // Buscar total de registros
-        const registrosResponse = await fetch("http://upoint-deploy-jpa-production.up.railway.app/registros/count")
+        const registrosResponse = await fetch("https://upoint-deploy-jpa-production.up.railway.app/registros/count")
         const registrosData = await registrosResponse.json()
         setTotalRegistros(registrosData.total)
       } catch (error) {
