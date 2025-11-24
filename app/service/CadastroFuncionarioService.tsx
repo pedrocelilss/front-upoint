@@ -21,6 +21,6 @@ export interface FuncionarioDTO {
 }
 
 export async function cadastrarFuncionario(data: FuncionarioDTO) {
-  const response = await axios.post("http://upoint-deploy-jpa-production.up.railway.app/auth/register", data)
+  const response = await axios.post("https://upoint-deploy-jpa-production.up.railway.app/auth/register", data)
   return response.data
 }
