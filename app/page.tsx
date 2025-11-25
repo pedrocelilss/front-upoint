@@ -16,7 +16,7 @@ export default function Home() {
     const data = { nome, email, telefone }
 
     try {
-      const response = await fetch("/api/contato", {
+      const response = await fetch("https://upoint-deploy-jpa-production.up.railway.app/api/contato", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
