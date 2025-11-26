@@ -76,9 +76,9 @@ export default function LoginScreen() {
                 <Label htmlFor="password" className="text-gray-700 font-medium">
                   Senha
                 </Label>
-                <a href="#" className="text-sm text-blue-600 hover:text-blue-800">
+                {/*<a href="#" className="text-sm text-blue-600 hover:text-blue-800">
                   Esqueceu a senha?
-                </a>
+                </a>*/}
               </div>
               <Input
                 id="password"
